@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Form Registrasi Mahasiswa</title>
+</head>
+<body>
+<h2>Form Registrasi Mahasisswa</h2>
+<form action="proses-data.php" method="post">
+    <fieldset>
+        <legend>Informasi Login</legend>
+        Username:
+        <br>
+        <input type="text" name="username" placeholder="Isikan Username">
+        <br>
+        Email:<br>
+        <input type="email" name="email" placeholder="Isikan Email yang aktif">
+        <br>
+        Password:<br>
+        <input type="password" name="password" placeholder="min. 8 karakter">
+        <br>
+        Ulangi password:<br>
+        <input type="password" name="retype_password" placeholder="Ulangi Password">
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Data diri</legend>
+        NIM:<br>
+        <input type="text" name="nim" placeholder="Isikan NIM">
+        <br>
+        Jurusan:<br>
+        <input type="radio" name="jurusan" value="Mahasiswa"> Teknik Informatika
+        <input type="radio" name="jurusan" value="Wiraswasta"> Manajemen Informatika
+        <input type="radio" name="jurusan" value="Lainnya"> Teknik Komputer
+        <br>
+        Nama Lengkap<br>
+        <input type="text" name="nama" placeholder="Isikan Nama Lengkap">
+        <br>
+        Tanggal lahir<br>
+        <input type="date" name="tgl_lahir">
+        <br>
+        Jumlah bersaudara(kandung)<br>
+        <input type="number" name="jlh_saudara" placeholder="cth: 5">
+        <br>
+        Jenis Kelamin<br>
+        <select name="jenis_kelamin">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+            <option value="Lainnya" selected>-Pilih Jenis Kelamin-</option>
+        </select>
+        <br>
+        Alamat<br>
+        <textarea name="alamat" placeholder="Isikan Alamat Lengkap"></textarea>
+        <br>
+        Foto Terbaru<br>
+        <input type="file" name="file_upload">
+        <br>
+        
+        Hobby<br>
+        <input type="checkbox" name="hobby1" value="Membaca"> Membaca<br>
+        <input type="checkbox" name="hobby2" value="Browsing"> Browsing<br>
+        <input type="checkbox" name="Hobby3" value="Coding"> Coding<br>
+        <br>
+        Warna Kesukaan
+        <input type="color" name="warna_kesuakaan">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Kebijakan layanan</legend>
+        <input type="radio" name="pekerjaan" value="setuju"> Saya setuju dengan kebijakan layanan dibawah
+        <br>
+        Kebijakan layanan<br>
+        <textarea name="kebijakan" placeholder="Isikan Alamat Lengkap" disabled>Saya mengisikan data yang sebenarnya dan menyetujui kebijakan layanan bla..bla..bla...dst</textarea>
+        <br>
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Batal">
+    </fieldset>
+</form>
+</body>
+</html>
